@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: "Minion 3";
+    src: url("fonts/Minion3-Regular.eot");
+    src: url("fonts/Minion3-Regular.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Minion3-Regular.woff2") format("woff2"),
+      url("fonts/Minion3-Regular.woff") format("woff"),
+      url("fonts/Minion3-Regular.ttf") format("truetype"),
+      url("fonts/Minion3-Regular.svg#Minion 3") format("svg");
+  }
+  * {
+    font-family: "Minion 3", "baskerville";
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-small;
+    font-weight: lighter;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sidebar {
+    bottom: 0;
+    position: fixed;
+    background-color: grey;
+  }
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .sidebar a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  div.content {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 1px 16px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+    .sidebar a {
+      float: left;
+    }
+    div.content {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo {
+      width: 15%;
+      height: 15%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .logo {
+      width: 25%;
+      height: 25%;
+    }
+  }
