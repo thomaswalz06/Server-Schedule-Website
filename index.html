@@ -45,24 +45,61 @@
       footer {
         background-color: white;
       }
-      .btn {
-        border: 1px solid black;
-        background-color: grey;
-        color: white;
-        padding: 10px 20x;
-        font-size: 16px;
-        align-content: right;
-      }
       .logo {
         background-color: white;
+      }
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: auto;
+      }
+
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {
+          float: left;
+        }
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
       }
     </style>
   </head>
   <body>
     <header>
-      <a href="page2.html" a>
-        <button class="btn">Next Server Schedule</button>
-      </a>
+      <div class="sidebar">
+        <a class="active" href="#index.html">Current Server Schedule</a>
+        <a href="page2.html">Next Server Schedule</a>
+      </div>
+
       <img class="logo" src="Chapellogo 10.06.06 PM.png" alt="Chapel Logo" />
     </header>
     <h1>Server Schedule</h1>

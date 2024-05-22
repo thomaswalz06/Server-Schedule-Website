@@ -38,24 +38,64 @@
         margin-left: auto;
         margin-right: auto;
       }
-      .btn {
-        border: 1px solid black;
-        background-color: grey;
-        color: white;
-        padding: 10px 20x;
-        font-size: 16px;
-        align-content: right;
-      }
+
       .logo {
         background-color: white;
       }
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: auto;
+      }
+
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: auto;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {
+          float: left;
+        }
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
     </style>
   </head>
-  <a href="index.html" a>
-    <button class=".btn">Current Server Schedule</button>
-  </a>
   <body>
-    <img class=".logo" src="Chapellogo 10.06.06 PM.png" alt="Chapel Logo" />
+    <header>
+      <div class="sidebar">
+        <a href="index.html">Current Server Schedule</a>
+        <a class="active" href="page2.html">Next Server Schedule</a>
+      </div>
+
+      <img class=".logo" src="Chapellogo 10.06.06 PM.png" alt="Chapel Logo" />
+    </header>
     <h1>Server Schedule</h1>
     <h2>June 16 - June 30</h2>
 
