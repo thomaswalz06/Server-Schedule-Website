@@ -10,12 +10,16 @@
   }
   * {
     font-family: "Minion 3", "baskerville";
+    margin: 0;
   }
   h1 {
     text-align: center;
   }
   h2 {
     text-align: center;
+  }
+  h3 {
+    padding: 1.6em;
   }
   footer {
     text-align: center;
@@ -32,12 +36,17 @@
     bottom: 0;
     position: fixed;
     background-color: grey;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   .sidebar a {
     display: block;
     color: white;
     padding: 16px;
     text-decoration: none;
+    width: 50%;
+    text-align: center;
   }
 
   .sidebar a.active {
@@ -56,8 +65,7 @@
     padding: 1px 16px;
     height: auto;
   }
-
-  @media screen and (max-width: 700px) {
+    @media screen and (max-width: 750px) {
     .sidebar {
       width: 100%;
       height: auto;
@@ -73,9 +81,6 @@
       width: 15%;
       height: 15%;
     }
-  }
-
-  @media screen and (max-width: 400px) {
     .sidebar a {
       text-align: center;
       float: none;
