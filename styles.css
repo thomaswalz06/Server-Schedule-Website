@@ -19,7 +19,9 @@
     text-align: center;
   }
   h3 {
-    padding: 1.6em;
+    padding-top: 1.6em;
+    padding-left: 1.6em;
+    padding-bottom: 0.5em;
   }
   footer {
     text-align: center;
