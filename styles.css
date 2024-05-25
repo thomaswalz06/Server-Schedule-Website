@@ -60,7 +60,9 @@
     background-color: #555;
     color: white;
   }
-
+  ul {
+    list-style-type: none;
+  }
   div.content {
     margin-left: 200px;
     margin-right: 200px;
