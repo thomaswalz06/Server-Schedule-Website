@@ -9,7 +9,7 @@
       url("fonts/Minion3-Regular.svg#Minion 3") format("svg");
   }
   * {
-    font-family: "Minion 3", "baskerville";
+    font-family: "Minion 3", "Noto";
     margin: 0;
   }
   h1 {
