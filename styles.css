@@ -12,6 +12,13 @@
     font-family: "Minion 3", "Noto";
     margin: 0;
   }
+  .grid-container {
+    display: column;
+    column-count: 2;
+    grid-auto-flow: column;
+    column-gap: normal;
+    padding-top: 2em;
+  }  
   h1 {
     text-align: center;
   }
@@ -45,7 +52,7 @@
     flex-direction: row;
     width: 100%;
   }
-  .sidebar a {
+   .sidebar a {
     display: block;
     color: white;
     padding: 16px;
@@ -53,6 +60,7 @@
     width: 50%;
     text-align: center;
   }
+  
 
   .sidebar a.active {
     background-color: #04aa6d;
