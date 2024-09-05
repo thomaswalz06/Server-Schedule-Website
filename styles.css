@@ -1,105 +1,150 @@
-
 @font-face {
-    font-family: "Minion 3";
-    src: url("fonts/Minion3-Regular.eot");
-    src: url("fonts/Minion3-Regular.eot?#iefix") format("embedded-opentype"),
-      url("fonts/Minion3-Regular.woff2") format("woff2"),
-      url("fonts/Minion3-Regular.woff") format("woff"),
-      url("fonts/Minion3-Regular.ttf") format("truetype"),
-      url("fonts/Minion3-Regular.svg#Minion 3") format("svg");
-  }
-  * {
-    font-family: "Minion 3", "Noto";
-    margin: 0;
-  }
-  .grid-container {
-    column-count: 3;
-    grid-auto-flow: column; 
-    max-width: 8.5in;
-  }     
-  h1 {
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  h3 {
-    padding-top: 1.6em;
-    padding-left: 1.6em;
-    padding-bottom: 0.5em;
-  }
-  footer {
-    text-align: center;
-    font-weight: bold;
-    font-size: x-small;
-    font-weight: lighter;
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
+  font-family: "Minion 3";
+  src: url("fonts/Minion3-Regular.eot");
+  src: url("fonts/Minion3-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Minion3-Regular.woff2") format("woff2"),
+    url("fonts/Minion3-Regular.woff") format("woff"),
+    url("fonts/Minion3-Regular.ttf") format("truetype"),
+    url("fonts/Minion3-Regular.svg#Minion 3") format("svg");
+}
+
+* {
+  font-family: "Minion 3", "Noto";
+  margin: 0;
+}
+
+
+header {
+  position: fixed;
+  height: 7em;
+  top: 1.5em;
+
   .logo {
+    max-height: 4em;
+    padding: 1.2em;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1.6em;
   }
+
+}
+
+.paper {
+
+  /* We only want to have this on for full screen devices... */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  width: 8.5in;
+  height: 11in;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 5em;
+  margin-bottom: 10em;
+
+  padding: .5in;
+}
+
+.grid-container {
+  column-count: 3;
+  grid-auto-flow: column;
+
+  /* Make it the width of letter paper: */
+  max-width: 8.5in;
+}  
+
+.grid-container > div {
+  display: inline-block;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h3 {
+  padding-top: 1.6em;
+  padding-left: 1.6em;
+  padding-bottom: 0.5em;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-small;
+  font-weight: lighter;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.sidebar {
+  bottom: 0;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+}
+
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.content {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 1px 16px;
+  height: auto;
+}
+
+@media screen and (max-width: 750px) {
   .sidebar {
-    bottom: 0;
-    position: fixed;
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
     width: 100%;
-  }
-   .sidebar a {
-    display: block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    width: 50%;
-    text-align: center;
-  }
-  
-
-  .sidebar a.active {
-    background-color: #04aa6d;
-    color: white;
-  }
-
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  ul {
-    list-style-type: none;
-  }
-  div.content {
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 1px 16px;
     height: auto;
   }
-    @media screen and (max-width: 750px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-    }
-    .sidebar a {
-      float: left;
-    }
-    div.content {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .logo {
-      width: 15%;
-      height: 15%;
-    }
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-    .logo {
-      width: 25%;
-      height: 25%;
-    }
+
+  .sidebar a {
+    float: left;
   }
+
+  div.content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 15%;
+    height: 15%;
+  }
+
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+  .logo {
+    width: 25%;
+    height: 25%;
+  }
+
+}
