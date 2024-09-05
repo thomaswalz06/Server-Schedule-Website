@@ -13,12 +13,10 @@
     margin: 0;
   }
   .grid-container {
-    display: column;
-    column-count: 2;
-    grid-auto-flow: column;
-    column-gap: normal;
-    padding-top: 2em;
-  }  
+    column-count: 3;
+    grid-auto-flow: column; 
+    max-width: 8.5in;
+  }     
   h1 {
     text-align: center;
   }
