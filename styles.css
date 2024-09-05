@@ -26,7 +26,7 @@ header {
   }
 
 }
-
+@media only screen and (minimum-width: 768px) {
 .paper {
 
   /* We only want to have this on for full screen devices... */
@@ -46,7 +46,7 @@ header {
 
   padding: .5in;
 }
-
+}
 .grid-container {
   column-count: 3;
   grid-auto-flow: column;
@@ -57,6 +57,15 @@ header {
 
 .grid-container > div {
   display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid-auto-flow;
+    column-count: 1;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
 }
 
 h1, h2 {
@@ -146,5 +155,4 @@ div.content {
     width: 25%;
     height: 25%;
   }
-
 }
