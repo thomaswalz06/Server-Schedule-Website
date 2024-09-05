@@ -26,7 +26,7 @@ header {
   }
 
 }
-@media only screen and (minimum-width: 758px) {
+@media only screen and (min-width: 758px) {
 .paper {
 
   /* We only want to have this on for full screen devices... */
