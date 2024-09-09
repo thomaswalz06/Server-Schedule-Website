@@ -155,19 +155,4 @@ div.content {
     width: 25%;
     height: 25%;
   }
-  .printbutton{
-    background-color: #04aa6d;
-    color: white;
-  }
-  @media print {
-    body {
-      visibility: hidden;
-    }
-   .paper {
-      visibility: visible;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
 }
