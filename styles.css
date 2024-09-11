@@ -155,4 +155,26 @@ div.content {
     width: 25%;
     height: 25%;
   }
+  @media print {
+  @page {
+    margin: 0;
+  }
+
+  body {
+    margin: 1cm;
+  }
+  
+  /* Hide browser-generated content */
+  @page :first {
+    margin-top: 0;
+  }
+  
+  @page :left {
+    margin-left: 0;
+  }
+  
+  @page :right {
+    margin-right: 0;
+  }
+}
 }
