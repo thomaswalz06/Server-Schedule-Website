@@ -38,8 +38,8 @@ header {
   width: 8.5in;
   height: 11in;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1em;
+  margin-right: 1em;
 
   margin-top: 5em;
   margin-bottom: 10em;
@@ -73,8 +73,8 @@ h1, h2 {
 }
 
 h3 {
-  padding-top: 1.6em;
-  padding-left: 1.6em;
+  padding-top: 0.6em;
+  padding-left: 0.6em;
   padding-bottom: 0.5em;
 }
 
@@ -120,9 +120,9 @@ ul {
 }
 
 div.content {
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 1px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
   height: auto;
 }
 
@@ -156,6 +156,10 @@ div.content {
     height: 25%;
   }
 
+  button {
+    top: 1.5em;
+    left: 1.5em;
+  }
 
   @media print {
 
