@@ -38,8 +38,8 @@ header {
   width: 8.5in;
   height: 11in;
 
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-top: 5em;
   margin-bottom: 10em;
@@ -73,8 +73,8 @@ h1, h2 {
 }
 
 h3 {
-  padding-top: 0.6em;
-  padding-left: 0.6em;
+  padding-top: 1.6em;
+  padding-left: 1.6em;
   padding-bottom: 0.5em;
 }
 
@@ -157,6 +157,7 @@ div.content {
   }
 
   button {
+    position: static;
     top: 1.5em;
     left: 1.5em;
   }
