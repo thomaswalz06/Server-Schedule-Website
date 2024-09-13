@@ -73,8 +73,8 @@ h1, h2 {
 }
 
 h3 {
-  padding-top: 0.6em;
-  padding-left: 0.6em;
+  padding-top: auto;
+  padding-left: auto;
   padding-bottom: 0.5em;
 }
 
