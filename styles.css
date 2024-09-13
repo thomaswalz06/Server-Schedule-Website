@@ -73,8 +73,8 @@ h1, h2 {
 }
 
 h3 {
-  padding-top: auto;
-  padding-left: auto;
+  padding-top: 0.6em;
+  padding-left: 0.6em;
   padding-bottom: 0.5em;
 }
 
@@ -120,9 +120,9 @@ ul {
 }
 
 div.content {
-  margin-left: auto;
-  margin-right: auto;
-  padding: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 1px 16px;
   height: auto;
 }
 
