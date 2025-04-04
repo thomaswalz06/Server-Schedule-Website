@@ -61,7 +61,8 @@ header {
 
 @media only screen and (max-width: 758px) {
   .grid-container {
-    display: grid-auto-flow;
+    display: flex;
+	flex-direction: column;
     column-count: 1;
     padding: 1em;
     grid-row-gap: 100px;
